@@ -33,6 +33,7 @@ main {
             @include transition-ease;
             padding: 0.4rem;  
            & :hover {
+            @include transition-ease;
             color:$secondary-color;
              } 
         }
