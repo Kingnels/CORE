@@ -1,18 +1,18 @@
- const menuBtn = document.querySelector('.menu-btn');
- const hamburger = document.querySelector('.menu-btn__burger');
+const menuBtn = document.querySelector(".menu-btn");
+const hamburger = document.querySelector(".menu-btn__burger");
 
 let showMenu = false;
 
-menuBtn.addEventListener('click', toggleMenu);
+menuBtn.addEventListener('click',toggleMenu);
 
-function toggleMenu() {
+function toggleMenu () {
     if(!showMenu) {
         hamburger.classList.add('open');
-        
-        showMenu= true;
+
+        showMenu = true;
     } else {
         hamburger.classList.remove('open');
-       
+    
         showMenu = false;
-    }
+    }   
 }
