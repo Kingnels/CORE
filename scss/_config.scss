@@ -1,8 +1,19 @@
 $primary-color:#272727;
 $secondary-color:#ff652f;
+$Special-color:rgb(41, 247, 41);
 
 @mixin transition-ease {
     transition: all 0.8s ease-in-out;
+
+    // (thinking about adding a map to differenitate the
+    //speed of transition)
+
+    // $transition: (
+	// "slow" : transition all 2s ease-in-out,
+	// "medium" : transition all 1s ease-in-out,
+	// "fast" : transition all 0.5s ease-in-out
+	// );
+   
     }
 * {
     box-sizing: border-box;
@@ -17,3 +28,19 @@ $secondary-color:#ff652f;
         @return #fff;
     }
 }
+@mixin media-md {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+ }
+@mixin media-lg {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+ }
+@mixin media-xl {
+    @media screen and (min-width: 1600px) {
+        @content;
+    }
+ }
+    
