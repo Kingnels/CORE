@@ -13,7 +13,7 @@
       url('../img/model-1.jpg') center top;
     background-size: cover;
     &__name {
-        & :hover {
+        &:hover {
             @include transition-ease;
             color:$Special-color
              } 
